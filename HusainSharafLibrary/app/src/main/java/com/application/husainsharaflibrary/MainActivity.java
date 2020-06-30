@@ -24,11 +24,21 @@ public class MainActivity extends AppCompatActivity {
             }
         });
 
-        Button segmentControl = findViewById(R.id.segmentControl);
+        final Button segmentControl = findViewById(R.id.segmentControl);
         segmentControl.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
                 Intent i = new Intent(MainActivity.this, SegmentControl.class);
+                i.putExtra("page",segmentControl.getText().toString());
+                startActivity(i);
+            }
+        });
+
+        Button loginPage = findViewById(R.id.loginPage);
+        loginPage.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent i = new Intent(MainActivity.this, LoginPage.class);
                 startActivity(i);
             }
         });
