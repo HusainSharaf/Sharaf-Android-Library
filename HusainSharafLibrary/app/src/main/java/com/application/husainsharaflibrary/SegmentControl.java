@@ -14,8 +14,7 @@ public class SegmentControl extends AppCompatActivity {
 
         Bundle bundle = getIntent().getExtras();
         String pageName = bundle.getString("page");
+
         Toast.makeText(SegmentControl.this, pageName, Toast.LENGTH_LONG).show();
-
-
     }
 }

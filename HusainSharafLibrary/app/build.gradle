@@ -33,4 +33,7 @@ dependencies {
     // Segment Control
     compile 'info.hoang8f:android-segmented:1.0.6'
 
+    // Switcher
+    implementation 'com.bitvale:switcher:1.1.0'
+
 }
