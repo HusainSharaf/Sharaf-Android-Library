@@ -19,71 +19,73 @@
             android:layout_height="match_parent"
             android:orientation="vertical">
 
-            <Button
-                android:id="@+id/b1"
+            <TextView
+                android:id="@+id/header"
                 android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:text="Toast" />
+                android:layout_height="80dp"
+                android:layout_marginTop="40dp"
+                android:layout_marginBottom="20dp"
+                android:background="#303030"
+                android:gravity="center"
+                android:text="My Library"
+                android:textColor="#FFFFFF"
+                android:textSize="30sp" />
 
-            <Button
-                android:id="@+id/segmentControl"
+            <LinearLayout
                 android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:text="Segment Control" />
+                android:layout_height="match_parent"
+                android:layout_marginLeft="40dp"
+                android:layout_marginRight="40dp"
+                android:orientation="vertical">
 
-            <Button
-                android:id="@+id/loginPage"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:text="Simple Login Page" />
+                <Button
+                    android:id="@+id/externalLibraries"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="External Libraries" />
 
-            <Button
-                android:id="@+id/switcher"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:text="Switcher" />
+                <Button
+                    android:id="@+id/roundImageView"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Round Image View" />
 
-            <Button
-                android:id="@+id/arrayOfImages"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:text="Array of Images" />
+                <Button
+                    android:id="@+id/switcher"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Switcher" />
 
-            <Button
-                android:id="@+id/externalLibraries"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:text="External Libraries" />
+                <Button
+                    android:id="@+id/toast"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Toast" />
 
-            <Button
-                android:id="@+id/profilePicture"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:text="Profile Picture" />
+                <Button
+                    android:id="@+id/arrayOfImages"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Array of Images" />
 
-            <Button
-                android:id="@+id/button7"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:text="Button" />
+                <Button
+                    android:id="@+id/segmentControl"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Segment Control" />
 
-            <Button
-                android:id="@+id/b2"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:text="Toast" />
+                <Button
+                    android:id="@+id/profilePicture"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Profile Picture" />
 
-            <Button
-                android:id="@+id/button8"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:text="Button" />
-
-            <Button
-                android:id="@+id/button9"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:text="Button" />
+                <Button
+                    android:id="@+id/loginPage"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Simple Login Page" />
+            </LinearLayout>
 
 
         </LinearLayout>

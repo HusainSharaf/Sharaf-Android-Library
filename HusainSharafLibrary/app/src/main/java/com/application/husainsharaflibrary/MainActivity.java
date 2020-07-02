@@ -15,7 +15,7 @@ public class MainActivity extends AppCompatActivity {
         setContentView(R.layout.activity_main);
 
         // this button will move u to the toast page
-        Button showToast = findViewById(R.id.b1);
+        Button showToast = findViewById(R.id.toast);
         showToast.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
@@ -39,6 +39,15 @@ public class MainActivity extends AppCompatActivity {
             @Override
             public void onClick(View view) {
                 Intent i = new Intent(MainActivity.this, LoginPage.class);
+                startActivity(i);
+            }
+        });
+
+        Button roundImageView = findViewById(R.id.roundImageView);
+        roundImageView.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent i = new Intent(MainActivity.this, RoundImageView.class);
                 startActivity(i);
             }
         });
