@@ -42,12 +42,15 @@ dependencies {
     implementation "com.github.skydoves:balloon:1.1.9"
 
     // Convert HTML
-    compile 'io.woo:htmltopdf:1.0.8'
+    implementation 'io.woo:htmltopdf:1.0.8'
 
     // Switcher
     implementation 'com.bitvale:switcher:1.1.0'
 
-    // Round ImageView
+    // Circle ImageView
     implementation 'de.hdodenhof:circleimageview:3.1.0'
+
+    // Rounded Corner ImageView
+    implementation 'com.makeramen:roundedimageview:2.3.0'
 
 }

@@ -10,14 +10,15 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
-        <activity android:name=".RoundImageView"></activity>
-        <activity android:name=".Switcher" />
-        <activity android:name=".ConvertHTMLToPDF" />
-        <activity android:name=".CreateHTML" />
-        <activity android:name=".GeneratingPDF" />
-        <activity android:name=".LoginPage" />
-        <activity android:name=".SegmentControl" />
-        <activity android:name=".ShowToast" />
+        <activity android:name=".Done.RoundedCornerImageView"></activity>
+        <activity android:name=".Done.RoundImageView" />
+        <activity android:name=".Done.Switcher" />
+        <activity android:name=".UnderTesting.ConvertHTMLToPDF" />
+        <activity android:name=".Done.CreateHTML" />
+        <activity android:name=".Done.GeneratingPDF" />
+        <activity android:name=".Done.LoginPage" />
+        <activity android:name=".Done.SegmentControl" />
+        <activity android:name=".Done.ShowToast" />
         <activity android:name=".MainActivity">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
@@ -26,8 +27,8 @@
             </intent-filter>
         </activity>
     </application>
-    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
-
     <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
 
 </manifest>

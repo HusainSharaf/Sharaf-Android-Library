@@ -1,9 +1,11 @@
-package com.application.husainsharaflibrary;
+package com.application.husainsharaflibrary.Done;
 
 import androidx.appcompat.app.AppCompatActivity;
 
 import android.os.Bundle;
 import android.widget.Toast;
+
+import com.application.husainsharaflibrary.R;
 
 public class SegmentControl extends AppCompatActivity {
 

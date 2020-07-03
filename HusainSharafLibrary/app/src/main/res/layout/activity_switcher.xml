@@ -4,7 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".Switcher">
+    tools:context=".Done.Switcher">
 
     <com.bitvale.switcher.SwitcherC
         android:id="@+id/switcher_circle"

@@ -7,6 +7,16 @@ import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
 
+import com.application.husainsharaflibrary.Done.CreateHTML;
+import com.application.husainsharaflibrary.Done.GeneratingPDF;
+import com.application.husainsharaflibrary.Done.LoginPage;
+import com.application.husainsharaflibrary.Done.RoundImageView;
+import com.application.husainsharaflibrary.Done.RoundedCornerImageView;
+import com.application.husainsharaflibrary.Done.SegmentControl;
+import com.application.husainsharaflibrary.Done.ShowToast;
+import com.application.husainsharaflibrary.Done.Switcher;
+import com.application.husainsharaflibrary.UnderTesting.ConvertHTMLToPDF;
+
 public class MainActivity extends AppCompatActivity {
 
     @Override
@@ -84,6 +94,15 @@ public class MainActivity extends AppCompatActivity {
             @Override
             public void onClick(View view) {
                 Intent i = new Intent(MainActivity.this, RoundImageView.class);
+                startActivity(i);
+            }
+        });
+
+        Button roundedCornerImageView = findViewById(R.id.roundedCornersImageView);
+        roundedCornerImageView.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent i = new Intent(MainActivity.this, RoundedCornerImageView.class);
                 startActivity(i);
             }
         });

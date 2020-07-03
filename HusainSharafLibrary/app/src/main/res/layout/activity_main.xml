@@ -39,34 +39,10 @@
                 android:orientation="vertical">
 
                 <Button
-                    android:id="@+id/externalLibraries"
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:text="External Libraries" />
-
-                <Button
-                    android:id="@+id/roundImageView"
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:text="Round Image View" />
-
-                <Button
-                    android:id="@+id/switcher"
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:text="Switcher" />
-
-                <Button
                     android:id="@+id/toast"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:text="Toast" />
-
-                <Button
-                    android:id="@+id/arrayOfImages"
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:text="Array of Images" />
 
                 <Button
                     android:id="@+id/segmentControl"
@@ -75,16 +51,22 @@
                     android:text="Segment Control" />
 
                 <Button
-                    android:id="@+id/profilePicture"
+                    android:id="@+id/switcher"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:text="Profile Picture" />
+                    android:text="Switcher" />
 
                 <Button
-                    android:id="@+id/loginPage"
+                    android:id="@+id/roundImageView"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:text="Simple Login Page" />
+                    android:text="Round Image View" />
+
+                <Button
+                    android:id="@+id/roundedCornersImageView"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Rounded Corners" />
 
                 <Button
                     android:id="@+id/generatingPDF"
@@ -103,6 +85,37 @@
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:text="Convert HTML to PDF" />
+
+                <Button
+                    android:id="@+id/loginPage"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Simple Login Page" />
+
+                <Button
+                    android:id="@+id/externalLibraries"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="External Libraries" />
+
+                <Button
+                    android:id="@+id/arrayOfImages"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Array of Images" />
+
+                <Button
+                    android:id="@+id/profilePicture"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Profile Picture" />
+
+                <Button
+                    android:id="@+id/visibility"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Visibility" />
+
             </LinearLayout>
 
 
