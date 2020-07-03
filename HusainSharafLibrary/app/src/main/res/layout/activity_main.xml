@@ -91,6 +91,18 @@
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:text="Generating PDF" />
+
+                <Button
+                    android:id="@+id/createHTML"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Create HTML" />
+
+                <Button
+                    android:id="@+id/convertHTMLtoPDF"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Convert HTML to PDF" />
             </LinearLayout>
 
 

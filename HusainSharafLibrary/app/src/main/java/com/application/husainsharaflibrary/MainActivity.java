@@ -43,20 +43,47 @@ public class MainActivity extends AppCompatActivity {
             }
         });
 
-        Button roundImageView = findViewById(R.id.roundImageView);
-        roundImageView.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View view) {
-                Intent i = new Intent(MainActivity.this, RoundImageView.class);
-                startActivity(i);
-            }
-        });
-
         Button generatingPDF = findViewById(R.id.generatingPDF);
         generatingPDF.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
                 Intent i = new Intent(MainActivity.this, GeneratingPDF.class);
+                startActivity(i);
+            }
+        });
+
+        Button createHTML = findViewById(R.id.createHTML);
+        createHTML.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent i = new Intent(MainActivity.this, CreateHTML.class);
+                startActivity(i);
+            }
+        });
+
+        Button convertHTMLtoPDF = findViewById(R.id.convertHTMLtoPDF);
+        convertHTMLtoPDF.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent i = new Intent(MainActivity.this, ConvertHTMLToPDF.class);
+                startActivity(i);
+            }
+        });
+
+        Button switcher = findViewById(R.id.switcher);
+        switcher.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent i = new Intent(MainActivity.this, Switcher.class);
+                startActivity(i);
+            }
+        });
+
+        Button roundImageView = findViewById(R.id.roundImageView);
+        roundImageView.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent i = new Intent(MainActivity.this, RoundImageView.class);
                 startActivity(i);
             }
         });
