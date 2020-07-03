@@ -36,4 +36,10 @@ dependencies {
     // Round Image View
     implementation 'de.hdodenhof:circleimageview:3.1.0'
 
+    // Balloon I couldn't implement it
+    implementation "com.github.skydoves:balloon:1.1.9"
+
+    // Generate PDF
+    implementation 'com.uttampanchasara.pdfgenerator:pdfgenerator:1.3'
+
 }

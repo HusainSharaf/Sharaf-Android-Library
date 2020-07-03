@@ -85,6 +85,12 @@
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:text="Simple Login Page" />
+
+                <Button
+                    android:id="@+id/generatingPDF"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Generating PDF" />
             </LinearLayout>
 
 

@@ -52,5 +52,14 @@ public class MainActivity extends AppCompatActivity {
             }
         });
 
+        Button generatingPDF = findViewById(R.id.generatingPDF);
+        generatingPDF.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent i = new Intent(MainActivity.this, GeneratingPDF.class);
+                startActivity(i);
+            }
+        });
+
     }
 }
