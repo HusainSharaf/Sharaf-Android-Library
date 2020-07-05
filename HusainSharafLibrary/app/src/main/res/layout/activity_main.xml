@@ -93,6 +93,18 @@
                     android:text="Simple Login Page" />
 
                 <Button
+                    android:id="@+id/firebase"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Firebase" />
+
+                <Button
+                    android:id="@+id/firebase_add_book"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Firebase Add Book" />
+
+                <Button
                     android:id="@+id/externalLibraries"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"

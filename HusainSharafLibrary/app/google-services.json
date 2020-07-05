@@ -1,0 +1,40 @@
+{
+  "project_info": {
+    "project_number": "106601854336",
+    "firebase_url": "https://books-59b8f.firebaseio.com",
+    "project_id": "books-59b8f",
+    "storage_bucket": "books-59b8f.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:106601854336:android:50d3bb652535d3491c7d65",
+        "android_client_info": {
+          "package_name": "com.application.husainsharaflibrary"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "106601854336-o5ct7uq6062bdips6p1s38nt44it0n7e.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBYPXcJvaje9XceBR9Fz2IbNhWEkkbktS8"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "106601854336-o5ct7uq6062bdips6p1s38nt44it0n7e.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

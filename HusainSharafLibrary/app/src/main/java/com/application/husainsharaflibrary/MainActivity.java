@@ -107,5 +107,23 @@ public class MainActivity extends AppCompatActivity {
             }
         });
 
+        Button firebase = findViewById(R.id.firebase);
+        firebase.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent i = new Intent(MainActivity.this, BookListAcitvity.class);
+                startActivity(i);
+            }
+        });
+
+        Button firebaseAddBook = findViewById(R.id.firebase_add_book);
+        firebaseAddBook.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent i = new Intent(MainActivity.this, NewBookActivity.class);
+                startActivity(i);
+            }
+        });
+
     }
 }

@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="book_categories">
+        <item>Software</item>
+        <item>Cats</item>
+        <item>Android</item>
+        <item>Cooking</item>
+    </string-array>
+
+
+
+
+</resources>

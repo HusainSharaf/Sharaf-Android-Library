@@ -10,7 +10,9 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
-        <activity android:name=".Done.RoundedCornerImageView"></activity>
+        <activity android:name=".NewBookActivity"></activity>
+        <activity android:name=".BookListAcitvity" />
+        <activity android:name=".Done.RoundedCornerImageView" />
         <activity android:name=".Done.RoundImageView" />
         <activity android:name=".Done.Switcher" />
         <activity android:name=".UnderTesting.ConvertHTMLToPDF" />
