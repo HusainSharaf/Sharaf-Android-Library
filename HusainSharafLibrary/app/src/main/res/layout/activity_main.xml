@@ -102,7 +102,21 @@
                     android:id="@+id/firebase_add_book"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:text="Firebase Add Book" />
+                    android:text="Firebase Add Book"
+                    android:visibility="gone" />
+
+                <Button
+                    android:id="@+id/firebaseLogin"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Firebase Login" />
+
+                <Button
+                    android:id="@+id/firebaseLogout"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Firebase Logout"
+                    android:visibility="gone" />
 
                 <Button
                     android:id="@+id/externalLibraries"

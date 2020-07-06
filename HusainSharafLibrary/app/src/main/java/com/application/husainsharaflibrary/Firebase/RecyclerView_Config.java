@@ -1,4 +1,4 @@
-package com.application.husainsharaflibrary;
+package com.application.husainsharaflibrary.Firebase;
 
 import android.content.Context;
 import android.view.LayoutInflater;
@@ -9,12 +9,21 @@ import androidx.annotation.NonNull;
 import androidx.recyclerview.widget.LinearLayoutManager;
 import androidx.recyclerview.widget.RecyclerView;
 
+import com.application.husainsharaflibrary.R;
+import com.google.firebase.auth.FirebaseAuth;
+import com.google.firebase.auth.FirebaseUser;
+
 import java.util.List;
 
 public class RecyclerView_Config {
+    FirebaseAuth mAuth;
+    private static FirebaseUser user;
     private Context mContext;
     private BooksAdapter mBooksAdapter;
     public void setConfig(RecyclerView recyclerView, Context context, List<Book> books, List<String> keys){
+        mAuth = FirebaseAuth.getInstance();
+        user = mAuth.getCurrentUser();
+
         mContext = context;
         mBooksAdapter = new BooksAdapter(books, keys);
         recyclerView.setLayoutManager(new LinearLayoutManager(context));
@@ -75,6 +84,10 @@ public class RecyclerView_Config {
         public int getItemCount() {
             return mBookList.size();
         }
+    }
+
+    public static void logout(){
+        user = null;
     }
 
 

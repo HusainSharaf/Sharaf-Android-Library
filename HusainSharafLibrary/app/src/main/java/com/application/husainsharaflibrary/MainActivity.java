@@ -15,14 +15,25 @@ import com.application.husainsharaflibrary.Done.RoundedCornerImageView;
 import com.application.husainsharaflibrary.Done.SegmentControl;
 import com.application.husainsharaflibrary.Done.ShowToast;
 import com.application.husainsharaflibrary.Done.Switcher;
+import com.application.husainsharaflibrary.Firebase.BookListAcitvity;
+import com.application.husainsharaflibrary.Firebase.NewBookActivity;
+import com.application.husainsharaflibrary.Firebase.RecyclerView_Config;
+import com.application.husainsharaflibrary.Firebase.SignInActivity;
 import com.application.husainsharaflibrary.UnderTesting.ConvertHTMLToPDF;
+import com.google.firebase.auth.FirebaseAuth;
+import com.google.firebase.auth.FirebaseUser;
+
 
 public class MainActivity extends AppCompatActivity {
+
+    private FirebaseAuth mAuth;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
+
+        mAuth = FirebaseAuth.getInstance();
 
         // this button will move u to the toast page
         Button showToast = findViewById(R.id.toast);
@@ -124,6 +135,44 @@ public class MainActivity extends AppCompatActivity {
                 startActivity(i);
             }
         });
+
+        Button login = findViewById(R.id.firebaseLogin);
+        login.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent i = new Intent(MainActivity.this, SignInActivity.class);
+                startActivity(i);
+            }
+        });
+
+        Button logout = findViewById(R.id.firebaseLogout);
+        logout.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                mAuth.signOut();
+                RecyclerView_Config.logout();
+
+                FirebaseUser user = mAuth.getCurrentUser();
+
+                if (user != null){
+                    firebaseAddBook.setVisibility(View.VISIBLE);
+                    logout.setVisibility(View.VISIBLE);
+                }else {
+                    firebaseAddBook.setVisibility(View.GONE);
+                    logout.setVisibility(View.GONE);
+                }
+            }
+        });
+
+        FirebaseUser user = mAuth.getCurrentUser();
+
+        if (user != null){
+            firebaseAddBook.setVisibility(View.VISIBLE);
+            logout.setVisibility(View.VISIBLE);
+        }else {
+            firebaseAddBook.setVisibility(View.GONE);
+            logout.setVisibility(View.GONE);
+        }
 
     }
 }

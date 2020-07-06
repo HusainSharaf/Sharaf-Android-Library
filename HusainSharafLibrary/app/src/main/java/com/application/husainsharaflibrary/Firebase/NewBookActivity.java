@@ -1,4 +1,4 @@
-package com.application.husainsharaflibrary;
+package com.application.husainsharaflibrary.Firebase;
 
 import androidx.appcompat.app.AppCompatActivity;
 
@@ -8,6 +8,8 @@ import android.widget.Button;
 import android.widget.EditText;
 import android.widget.Spinner;
 import android.widget.Toast;
+
+import com.application.husainsharaflibrary.R;
 
 import java.util.List;
 
