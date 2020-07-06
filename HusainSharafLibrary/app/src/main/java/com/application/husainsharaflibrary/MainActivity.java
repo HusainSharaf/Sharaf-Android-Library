@@ -34,6 +34,8 @@ public class MainActivity extends AppCompatActivity {
         setContentView(R.layout.activity_main);
 
         mAuth = FirebaseAuth.getInstance();
+        mAuth.signOut();
+        RecyclerView_Config.logout();
 
         // this button will move u to the toast page
         Button showToast = findViewById(R.id.toast);
