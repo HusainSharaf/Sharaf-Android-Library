@@ -129,6 +129,14 @@ public class MainActivity extends AppCompatActivity {
             }
         });
 
+        Button arrayOfImages = findViewById(R.id.arrayOfImages);
+        arrayOfImages.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent i = new Intent(MainActivity.this, ArrayOfImages.class);
+                startActivity(i);            }
+        });
+
         Button firebaseAddBook = findViewById(R.id.firebase_add_book);
         firebaseAddBook.setOnClickListener(new View.OnClickListener() {
             @Override
